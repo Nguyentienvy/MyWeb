@@ -1,1 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+/* ===== HEADER / NAV ===== */
+#header {
+  background-color: #c0392b;
+  padding: 0 20px;
+}
+
+#header ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+#header ul li {
+  color: #fff;
+  padding: 12px 14px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+#header ul li:hover {
+  background-color: #a93226;
+}
+
+/* ===== CONTAINER ===== */
+#container {
+  display: flex;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+/* ===== CONTENT MAIN ===== */
+#content-main {
+  display: flex;
+  gap: 16px;
+  flex: 1;
+}
+
+#col-1,
+#col-2 {
+  flex: 1;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+#col-1 img,
+#col-2 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+#col-1 h2,
+#col-2 h2 {
+  font-size: 16px;
+  padding: 12px 12px 8px;
+  line-height: 1.5;
+  color: #c0392b;
+}
+
+#col-1 p,
+#col-2 p {
+  font-size: 13px;
+  padding: 0 12px 10px;
+  color: #555;
+  line-height: 1.6;
+}
+
+#col-1 ul,
+#col-2 ul {
+  list-style: none;
+  padding: 0 12px 12px;
+  border-top: 1px solid #eee;
+  margin-top: 8px;
+}
+
+#col-1 ul li,
+#col-2 ul li {
+  font-size: 13px;
+  padding: 6px 0;
+  border-bottom: 1px dashed #eee;
+  color: #333;
+  cursor: pointer;
+}
+
+#col-1 ul li:hover,
+#col-2 ul li:hover {
+  color: #c0392b;
+}
+
+#col-1 ul li::before,
+#col-2 ul li::before {
+  content: "› ";
+  color: #c0392b;
+  font-weight: bold;
+}
+
+/* ===== SIDEBAR ===== */
+#sidebar {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+#sidebar-header {
+  background-color: #c0392b;
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 10px 14px;
+  border-radius: 4px 4px 0 0;
+  text-transform: uppercase;
+}
+
+.side-news {
+  display: flex;
+  gap: 10px;
+  background: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.side-news img {
+  width: 80px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.side-news h4 {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #222;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.side-news h4:hover {
+  color: #c0392b;
+}
+
+.side-news p {
+  font-size: 12px;
+  color: #999;
+}
