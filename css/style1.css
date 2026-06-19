@@ -1,0 +1,19 @@
+/* Chặng 1: liên kết CSS ngoài và selector cơ bản */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1b5e20;
+  background-color: #e8f5e9;
+}
+
+h1, h2, h3, p {
+  margin-top: 0;
+}
+
+a {
+  color: #2e7d32;
+}
