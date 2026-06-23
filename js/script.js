@@ -8,6 +8,7 @@ console.log("Chủ đề:", topic);
 console.log("Số ảnh:", imageCount);
 console.log("Đã sẵn sàng dùng JS?", isReady);
 console.log("Kiểu dữ liệu topic:", typeof topic);
+
 const mainTitle = document.getElementById("mainTitle");
 const welcomeText = document.getElementById("welcomeText");
 
@@ -15,6 +16,7 @@ if (mainTitle && welcomeText) {
   mainTitle.textContent = "Nguyễn Tiến Vỹ 👋";
   welcomeText.textContent = "Chào mừng bạn đến với trang giới thiệu bản thân của mình!";
 }
+
 const toggleAboutBtn = document.getElementById("toggleAboutBtn");
 const aboutContent = document.getElementById("aboutContent");
 
@@ -23,11 +25,23 @@ if (toggleAboutBtn && aboutContent) {
     aboutContent.classList.toggle("hidden");
   });
 }
+
 const menuToggle = document.getElementById("menuToggle");
 const mainMenu = document.getElementById("mainMenu");
 
 if (menuToggle && mainMenu) {
   menuToggle.addEventListener("click", function () {
     mainMenu.classList.toggle("active");
+  });
+}
+
+const themeSelect = document.getElementById("themeSelect");
+
+if (themeSelect) {
+  themeSelect.addEventListener("change", function () {
+    document.body.classList.remove("dark-mode", "warm-mode");
+    if (themeSelect.value !== "") {
+      document.body.classList.add(themeSelect.value);
+    }
   });
 }
