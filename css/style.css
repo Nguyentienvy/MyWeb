@@ -51,3 +51,40 @@ h1 {
 .hidden {
     display: none;
 }
+.menu-toggle {
+    display: none;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.main-menu {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .menu-toggle {
+        display: block;
+    }
+    .main-menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-menu.active {
+        display: flex;
+    }
+}
