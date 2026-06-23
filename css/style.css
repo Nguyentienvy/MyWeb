@@ -133,3 +133,49 @@ body.warm-mode .container {
     border: 1px solid #ccc;
     font-size: 14px;
 }
+.gallery-section {
+    margin-top: 25px;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.filter-btn {
+    background: #f0f4f8;
+    border: 1px solid #4a90e2;
+    color: #4a90e2;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.filter-btn:hover {
+    background: #4a90e2;
+    color: white;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: 150px;
+    font-size: 12px;
+    color: #444;
+}
+
+.gallery-item img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
