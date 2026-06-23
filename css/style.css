@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f4f8;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 40px;
 }
 
@@ -89,4 +90,38 @@ h1 {
     .main-menu.active {
         display: flex;
     }
+}
+
+#themeSelect {
+    margin-bottom: 20px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+body.dark-mode {
+    background: #111827;
+    color: #f8fafc;
+}
+
+body.dark-mode .container {
+    background: #1f2937;
+    color: #f8fafc;
+}
+
+body.dark-mode h1 {
+    color: #f8fafc;
+}
+
+body.dark-mode .bio {
+    color: #cbd5e1;
+}
+
+body.warm-mode {
+    background: #fff7ed;
+}
+
+body.warm-mode .container {
+    background: #fffaf0;
 }
