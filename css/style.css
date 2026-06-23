@@ -125,3 +125,11 @@ body.warm-mode {
 body.warm-mode .container {
     background: #fffaf0;
 }
+#searchInput {
+    margin: 10px 0;
+    padding: 6px 10px;
+    width: 90%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
