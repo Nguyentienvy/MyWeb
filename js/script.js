@@ -79,3 +79,31 @@ filterButtons.forEach(function (button) {
     });
   });
 });
+const contactForm = document.getElementById("contactForm");
+const fullName = document.getElementById("fullName");
+const email = document.getElementById("email");
+const formMessage = document.getElementById("formMessage");
+
+if (contactForm && fullName && email && formMessage) {
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const nameValue = fullName.value.trim();
+    const emailValue = email.value.trim();
+
+    if (nameValue === "") {
+      formMessage.textContent = "Vui lòng nhập họ tên.";
+      formMessage.style.color = "red";
+      return;
+    }
+
+    if (emailValue === "" || !emailValue.includes("@")) {
+      formMessage.textContent = "Vui lòng nhập email hợp lệ.";
+      formMessage.style.color = "red";
+      return;
+    }
+
+    formMessage.textContent = "Thông tin đã hợp lệ. Cảm ơn bạn!";
+    formMessage.style.color = "green";
+  });
+}
