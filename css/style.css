@@ -179,3 +179,40 @@ body.warm-mode .container {
     object-fit: cover;
     border-radius: 8px;
 }
+.contact-section {
+    margin-top: 25px;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#contactForm input {
+    width: 90%;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#contactForm button {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#contactForm button:hover {
+    background: #357abd;
+}
+
+#formMessage {
+    font-size: 13px;
+    font-weight: bold;
+}
