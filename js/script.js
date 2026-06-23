@@ -15,3 +15,11 @@ if (mainTitle && welcomeText) {
   mainTitle.textContent = "Nguyễn Tiến Vỹ 👋";
   welcomeText.textContent = "Chào mừng bạn đến với trang giới thiệu bản thân của mình!";
 }
+const toggleAboutBtn = document.getElementById("toggleAboutBtn");
+const aboutContent = document.getElementById("aboutContent");
+
+if (toggleAboutBtn && aboutContent) {
+  toggleAboutBtn.addEventListener("click", function () {
+    aboutContent.classList.toggle("hidden");
+  });
+}
