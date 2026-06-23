@@ -45,3 +45,20 @@ if (themeSelect) {
     }
   });
 }
+const searchInput = document.getElementById("searchInput");
+const searchItems = document.querySelectorAll(".search-item");
+
+if (searchInput && searchItems.length > 0) {
+  searchInput.addEventListener("keyup", function () {
+    const keyword = searchInput.value.toLowerCase().trim();
+
+    searchItems.forEach(function (item) {
+      const text = item.textContent.toLowerCase();
+      if (text.includes(keyword)) {
+        item.style.display = "";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+}
